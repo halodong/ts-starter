@@ -1,0 +1,11 @@
+node_modules
+
+dist
+build
+
+src/plugins/*
+
+*.md
+
+*.json
+*.html
