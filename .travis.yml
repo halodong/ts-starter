@@ -14,4 +14,6 @@ install:
 script:
   - pnpm lint
   - pnpm test
-  - codecov -f coverage/*.json
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

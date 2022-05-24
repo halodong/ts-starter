@@ -1,17 +1,16 @@
 {
   "name": "ts-starter",
-  "type": "module",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc vitest --coverage",
-    "lint": "eslint .",
-    "posttest": "nyc report --reporter=json"
+    "test": "jest",
+    "lint": "eslint ."
   },
   "author": "halodong",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^27.5.1",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "c8": "^7.11.3",
@@ -20,8 +19,10 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-standard": "^5.0.0",
-    "nyc": "^15.1.0",
+    "jest": "^28.1.0",
+    "jest-config": "^28.1.0",
     "standard": "^17.0.0",
+    "ts-jest": "^28.0.3",
     "ts-standard": "^11.0.0",
     "typescript": "^4.6.4",
     "vite": "^2.9.9",

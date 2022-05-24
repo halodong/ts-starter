@@ -1,0 +1,18 @@
+// https://jestjs.io/docs/configuration
+
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageProvider: 'v8',
+  transform: {
+    '^.+\\.ts?$': 'ts-jest'
+  },
+  collectCoverageFrom: ['src/index.ts'],
+  coverageReporters: [
+    'json-summary',
+    'text',
+    'lcov'
+  ]
+}
