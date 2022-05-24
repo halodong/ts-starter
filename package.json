@@ -2,8 +2,9 @@
   "name": "ts-starter",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rollup -c",
     "test": "jest",
     "lint": "eslint ."
   },
@@ -20,6 +21,9 @@
     "eslint-plugin-standard": "^5.0.0",
     "jest": "^28.1.0",
     "jest-config": "^28.1.0",
+    "rollup": "^2.74.1",
+    "rollup-plugin-size": "^0.2.2",
+    "rollup-plugin-typescript2": "^0.31.2",
     "standard": "^17.0.0",
     "ts-jest": "^28.0.3",
     "ts-standard": "^11.0.0",
