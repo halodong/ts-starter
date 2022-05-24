@@ -5,8 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest --coverage",
-    "lint": "eslint ."
+    "test": "nyc vitest --coverage",
+    "lint": "eslint .",
+    "posttest": "nyc report --reporter=json"
   },
   "author": "halodong",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "eslint-config-standard": "^17.0.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-standard": "^5.0.0",
+    "nyc": "^15.1.0",
     "standard": "^17.0.0",
     "ts-standard": "^11.0.0",
     "typescript": "^4.6.4",
